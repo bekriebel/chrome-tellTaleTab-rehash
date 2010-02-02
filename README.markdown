@@ -1,5 +1,6 @@
 ## chrome-tellTaleTab-rehash
-This is a remake of Tell-Tale Tab by chet.luther to repair the problems caused by the 2.0.0 release.
+This is a remake of Tell-Tale Tab by chet.luther to repair the problems caused by the 2.0.0 release. I think that this has solved the problems, but I can make no guarantees!
+
 Simplified notification extension for a small but growing number of sites. Inspired by shikakaa's Gmail Favicon Alert extension, the notifications that there is something new of interest in the application's tab is done by the tab's favicon rather than taking up precious space in the "uber-bar."
 
 ### Currently Supported Sites
@@ -11,7 +12,7 @@ Simplified notification extension for a small but growing number of sites. Inspi
 * Twitter
 * Google Voice
 
-### TODO -At the moment, I do not plan to continue developing this extention, I simply wanted to make a working release. Chet's original list:
+### TODO -At the moment, I do not plan to continue developing this extension, I simply wanted to make a working release. Chet's original list:
 * Google Calendar
 * Meebo
 * MySpace
