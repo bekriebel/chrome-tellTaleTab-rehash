@@ -11,9 +11,7 @@ Simplified notification extension for a small but growing number of sites. Inspi
 * Twitter
 * Google Voice
 
-### TODO
-At the moment, I do not plan to continue developing this extention, I simply wanted to make a working release.
-Chet's original list:
+### TODO -At the moment, I do not plan to continue developing this extention, I simply wanted to make a working release. Chet's original list:
 * Google Calendar
 * Meebo
 * MySpace
@@ -21,7 +19,7 @@ Chet's original list:
 
 ### Changelog
 * `2.0.1 - 02/01/2010`  
-    Forced chet.luther's source to create the rehash.
+    Forked chet.luther's source to create the rehash.
 	Removed SugarCRM support (this had a wide filter that I was not comfortable releasing).
 	Added Google Voice support
 	Tested to ensure the memory leaks did not continue. (No promises, but this seems to be working for me!)
