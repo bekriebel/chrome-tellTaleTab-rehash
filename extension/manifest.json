@@ -1,7 +1,7 @@
 {
     "name": "Tell-Tale Tab - Rehash",
     "version": "2.0.1",
-    "description": "Notifies you of new content in popular web apps with the tab's favicon. This is a remake of Tell-Tale Tab by chet.luther to repair the problems caused by the 2.0.0 release.",
+    "description": "This is a remake of favicon extension Tell-Tale Tab by chet.luther to repair the problems caused by the 2.0.0 release.",
     "icons": {
        "128": "icon_128.png",
        "48": "icon_48.png"
