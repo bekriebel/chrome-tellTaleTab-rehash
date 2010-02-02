@@ -27,6 +27,18 @@ var sites = [
         }
 },
 
+{ // Google Voice
+    "id": "googleVoice",
+    "matches": [
+        "https://www.google.com/voice"
+        ],
+    "poll": {
+        "frequency": 30000,
+        "method": "titleMatch",
+        "regex": "Google Voice - .*\\s+\\(([0-9]+)\\)"
+    }
+},
+
 { // Google Reader
     "id": "googleReader",
     "matches": [
@@ -93,47 +105,6 @@ var sites = [
         "frequency": 10000,
         "method": "titleMatch",
         "regex": "Netvibes \\(([0-9]+)\\)"
-    }
-},
-
-{ // SugarCRM
-    "id": "sugarcrm",
-    "matches": [
-        localStorage['sugarcrm_baseUrl']
-        ],
-    "poll": {
-        "frequency": 60000,
-        "method": "custom",
-        "doit": ' \
-            var user_id = null; \
-            var links = document.getElementsByClassName("myAreaLink"); \
-            for (var i=0; i<links.length; i++) { \
-                if (links[0].innerText == "My Account") { \
-                    var uid_match = links[i].href.match("record=(.+)$"); \
-                    if (uid_match) { \
-                        user_id = uid_match[1]; \
-                    } \
-                } \
-            } \
-            \
-            if (user_id) { \
-                var xhr = new XMLHttpRequest(); \
-                xhr.open("GET", "/index.php?module=Cases&query=true&searchFormTab=advanced_search&assigned_user_id_advanced=" + user_id + "&status_advanced%5B%5D=New&status_advanced%5B%5D=Assigned%20-%20In%20Progress&status_advanced%5B%5D=Re-Opened", true); \
-                xhr.send(); \
-                xhr.onreadystatechange = function() { \
-                    if (xhr.readyState == 4) { \
-                        var count_match = xhr.responseText.match( \
-                            "\\\\(\\\\d+ - \\\\d+ of ([^)]+)\\\\)"); \
-                        if (count_match) { \
-                            update(count_match[1]); \
-                        } else { \
-                            update("0"); \
-                        } \
-                    } \
-                } \
-            } else { \
-                update("0"); \
-            }'
     }
 }
 
